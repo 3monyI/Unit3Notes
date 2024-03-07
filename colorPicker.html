@@ -23,6 +23,16 @@
         .purple{
             color:purple;
         }
+        .yellow{
+            background-color:yellow;
+        }
+        .brown{
+            background-color:cyan;
+        }
+        .brown{
+            background-color:brown;
+        }
+
     </style>
 </head>
 <body>
@@ -34,12 +44,18 @@
             <button id="1">RED</button>
             <button id="2">GREEN</button>
             <button id="3">BLUE</button>
+            <button id="4">YELLOW</button>
+            <button id="5">CYAN</button>
+            <button id="6">BROWN</button>
         </div>
         <div class="row">
             <h3>Text</h3>
-            <button id="4">PINK</button>
-            <button id="5">TEAL</button>
-            <button id="6">PURPLE</button>
+            <button id="7">PINK</button>
+            <button id="8">TEAL</button>
+            <button id="9">PURPLE</button>
+            <button id="10">BROWN</button>
+            <button id="11">CYAN</button>
+            <button id="12">YELLOW</button>
         </div>
         <button id="clear">CLEAR</button>
     </div>
@@ -49,10 +65,16 @@
     const red = document.getElementById('1');
     const green = document.getElementById('2');
     const blue = document.getElementById('3');
+    const yellow = document.getElementById('4');
+    const cyan = document.getElementById('5');
+    const brown = document.getElementById('6');
 
-    const pink = document.getElementById('4');
-    const teal = document.getElementById('5');
-    const purple = document.getElementById('6');
+    const yellow = document.getElementById('12');
+    const cyan = document.getElementById('11');
+    const brown = document.getElementById('10');
+    const pink = document.getElementById('7');
+    const teal = document.getElementById('8');
+    const purple = document.getElementById('9');
 
     const clearButton = document.getElementById('clear')
 
@@ -69,6 +91,21 @@
     blue.addEventListener('click', function(e){
         removeBGColor();
         content.classList.add('blue');
+    });
+
+    yellow.addEventListener('click', function(e){
+        removeBGColor();
+        content.classList.add('yellow');
+    });
+
+    yellow.addEventListener('click', function(e){
+        removeBGColor();
+        content.classList.add('yellow');
+    });
+
+    brown.addEventListener('click', function(e){
+        removeBGColor();
+        content.classList.add('brown');
     });
 
     pink.addEventListener('click', function(e){
@@ -90,6 +127,9 @@
         content.classList.remove('red')
         content.classList.remove('green')
         content.classList.remove('blue')
+        content.classList.remove('yellow')
+        content.classList.remove('cyan')
+        content.classList.remove('brown')
     }
 
     function removeTextColor(){
